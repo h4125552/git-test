@@ -1,0 +1,63 @@
+/*
+        for(i=0,j=1;i<4;i++,j++)
+        {
+            if(x[i]==0)
+            {
+                continue;
+            }
+            if(i==3)
+            {
+                doing[z]=x[i];
+                z++;
+            }
+            for(;j<4;j++)
+            {
+                if(x[i]==x[j])
+                {
+                    doing[z]=(x[i]+x[j]);
+                    x[i]=0;
+                    x[j]=0;
+                    z++;
+                    break;
+                }
+                else
+                {
+                    doing[z]=x[i];
+                    z++;
+                    break;
+                }
+            }   
+            /*
+            if(x[i]==0)
+            {
+                continue;
+            }
+            else if(x[i]==x[j])
+            {
+                doing[z]=(x[i+=x[j]]);
+                z++;
+            }
+            
+            else
+            {
+                doing[z]=x[i];
+                z++;
+            }
+            
+        }
+        */
+
+
+
+
+        
+		for(i=0;i<img_arr.length;i++)
+		{
+			if(img_arr[i]==8)
+			{
+				alert('you win!');
+				document.removeEventListener('keydown',keydown);
+				return ;
+			}
+			continue;
+		}
